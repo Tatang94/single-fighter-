@@ -45,7 +45,7 @@ def autoketik(s):
 def countdown(time_sec):
 	try:
 		while time_sec:
-			mins, secs = divmod(time_sec,10)
+			mins, secs = divmod(time_sec,60)
 			timeformat = '\033[1;97m[\033[1;93m•\033[1;97m] Silakan Menunggu Dalam Waktu \033[1;92m{:02d}:{:02d}'.format(mins,secs)
 			print(timeformat,end='\r')
 			time.sleep(1)
