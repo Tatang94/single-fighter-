@@ -46,7 +46,7 @@ def countdown(time_sec):
 	try:
 		while time_sec:
 			mins, secs = divmod(time_sec,60)
-			timeformat = '\033[1;94m[\033[1;94m•\033[1;94m] Silakan Menunggu Dalam Waktu \033[0;00m{:00d}:{:00d}'.format(mins,secs)
+			timeformat = '\000[0;00m[\000[0;00m•\000[0;00m] Silakan Menunggu Dalam Waktu \000[0;00m{:00d}:{:00d}'.format(mins,secs)
 			print(timeformat,end='\r')
 			time.sleep(1)
 			time_sec -= 1
@@ -57,10 +57,10 @@ def countdown(time_sec):
                 sys.exit()
 
 # Warna Default
-Hijau="\033[1;92m "
+Hijau="\000[0;00m "
 putih="\033[1;97m"
 abu="\033[1;90m"
-kuning="\033[1;93m"
+kuning="\034[1;93m"
 ungu="\033[1;95m"
 merah="33[37;1m"
 biru="\033[1;96m"
