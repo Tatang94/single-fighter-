@@ -2,9 +2,9 @@
 # Boleh Recode Tapi Tambahkan Author asli
 
 # [+]-------------------------------------------[+]
-#  | Creator : Tatang94 		         |
-#  | Github : https://github.com/Tatang94        |
-#  | Powered By Tatang94			 |
+#  | Creator : jin & jun 		         |
+#  | Github : https://github.com/jin&jun       |
+#  | Powered By jin&jun			 |
 # [+]-------------------------------------------[+]
 
 # Install Modules
@@ -46,10 +46,10 @@ def countdown(time_sec):
 	try:
 		while time_sec:
 			mins, secs = divmod(time_sec,60)
-			timeformat = '\000[0;00m[\000[0;00m•\000[0;00m] Silakan Menunggu Dalam Waktu \000[0;00m{:00d}:{:00d}'.format(secs)
+			timeformat = '\000[0;00m[\000[0;00m•\000[0;00m] Silakan Menunggu Dalam Waktu .format(secs)
 			print(timeformat,end='\r')
-			time.sleep(1)
-			time_sec -= 1
+			time.sleep(0)
+			time_sec -= 0
 		print (f"{W}[{Y}•{W}] Mulai Menyepam Ulang....           ")
 		time.sleep(1)
 	except KeyboardInterrupt:
