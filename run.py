@@ -46,7 +46,7 @@ def countdown(time_sec):
 	try:
 		while time_sec:
 			mins, secs = divmod(time_sec,60)
-			timeformat = '\000[0;00m[\000[0;00m•\000[0;00m] Silakan Menunggu Dalam Waktu .format(secs)
+			timeformat = '\000[0;00m[\000[0;00m•\000[0;00m] Silakan Menunggu Dalam Waktu \033[1;92m{:02d}:{:02d}'.format(secs)
 			print(timeformat,end='\r')
 			time.sleep(0)
 			time_sec -= 0
